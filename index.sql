@@ -139,3 +139,4 @@ VALUES
 ('2024-03-16 15:45:00', "Important de parler de sécurité informatique.", 52, 23),
 ('2024-03-17 11:00:00', "Je dors mal, merci pour ces conseils.", 53, 24),
 ('2024-03-18 09:15:00', "J'ai visité certains villages, ils sont magnifiques !", 54, 25);
+
