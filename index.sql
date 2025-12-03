@@ -8,7 +8,7 @@ CREATE TABLE utilisateur(
 	user_name VARCHAR(50) UNIQUE NOT NULL, 
     password VARCHAR(100) NOT NULL, 
     date_cre_compte DATETIME ,
-    role VARCHAR(20) CHECK (role IN ('admin', 'author'))
+    role VARCHAR(20) CHECK (role IN ('admin', 'author','editor'))
 );
 
 CREATE TABLE categorie (
@@ -34,7 +34,7 @@ CREATE TABLE commentaire (
 	date_cre_comment DATETIME ,
     contenu_comment TEXT ,
     id_article INT,
-    id_utilisateur INT,
+    id_utilisateur INT NULL,
     FOREIGN KEY(id_utilisateur) REFERENCES utilisateur (id_utilisateur),
     FOREIGN KEY(id_article) REFERENCES article (id_article)
 );
